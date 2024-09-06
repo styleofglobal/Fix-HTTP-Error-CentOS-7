@@ -12,10 +12,10 @@ You got it because CentOS 7 is at the end of its support. To temporarily resolve
 1. SSH to your Linux server using an administrative account.
 
 2. Run the following commands to search and replace the mirrors:
-``sudo sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo
-sudo sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo
-sudo sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo
-sudo -- bash -c 'echo "sslverify=false" >> /etc/yum.conf'``
+``sudo sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo``
+``sudo sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo``
+``sudo sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo``
+``sudo -- bash -c 'echo "sslverify=false" >> /etc/yum.conf'``
 
 The commands explanation:
 
