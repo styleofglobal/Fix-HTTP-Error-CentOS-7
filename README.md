@@ -12,7 +12,6 @@ You got it because CentOS 7 is at the end of its support. To temporarily resolve
 1. SSH to your Linux server using an administrative account.
 
 2. Run the following commands to search and replace the mirrors:
-3. 
 ``sudo sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo``
 
 ``sudo sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo``
@@ -32,7 +31,7 @@ The commands explanation:
     Command 4: This command adds the line sslverify=false to the end of the /etc/yum.conf file.
     This turns off SSL checking when using yum, which can help overcome problems related to SSL certificates
 
-4. Once done, please perform yum update or yum install to check the results.
+3. Once done, please perform yum update or yum install to check the results.
 
 
 https://bonguides.com/fix-http-error-404-not-found-trying-other-mirror-centos-7/?feed_id=1094&_unique_id=6697806adee10
